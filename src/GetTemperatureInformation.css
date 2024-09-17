@@ -5,6 +5,7 @@
     padding: 20px;
     margin: 10px;
     text-align: center;
+    direction: rtl;
     flex: 1 1 calc(50% - 10%);
 }
 
@@ -30,6 +31,6 @@
 }
 
 .card .temperature {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
 }
