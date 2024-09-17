@@ -17,12 +17,12 @@ function GetTemperatureInformation({ city, title }) {
         setError(null); // Clear previous errors if request is successful
       } catch (error) {
         console.error('Error fetching data:', error);
-        setError('Error fetching data. Please try again later.');
+        setError('.שגיאה בהעלאת הקובץ, נסה במועד מאוחר יותר');
       }
     };
 
     fetchData();
-  }, [city]);
+  }, []);
 
   const getFilteredData = () => {
     if (!data) return null;
@@ -55,7 +55,7 @@ function GetTemperatureInformation({ city, title }) {
             <p className="description">Description: {filteredData.description}</p>
           </div>
         ) : (
-          'Loading...'
+          '...טוען '
         )
       )}
     </div>
